@@ -1,0 +1,5 @@
+var GUNNTOKEN = artifacts.require("GUNNTOKEN");
+
+module.exports = function(deployer) {
+    deployer.deploy(ntoken);
+};
