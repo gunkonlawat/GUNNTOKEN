@@ -1,0 +1,11 @@
+pragma solidity ^0.5.16;
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+contract GUNNTOKEN is ERC20{
+    string public name = "GUNNTOKEN";
+    string public symbol = "GUN";
+    uint8 public decimals = 6;
+    uint public INITIAL_SUPPLY = 2000000;
+    constructor() public {
+    _mint(msg.sender, INITIAL_SUPPLY);
+    }
+}
